@@ -12,5 +12,7 @@ RUN apt-get update \
                         iputils-ping \
                         iproute \
                         tftp \
+                        tshark \
+                        man \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
