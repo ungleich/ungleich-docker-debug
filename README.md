@@ -13,3 +13,7 @@ dealing with DHCP,TFTP or DNS server installations.
 ``` bash
 docker run -ti ungleich/ungleich-docker-debug /bin/zsh
 ```
+
+# More information
+
+Have a look into the Dockerfile for available packages.
