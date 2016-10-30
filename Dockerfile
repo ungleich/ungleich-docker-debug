@@ -3,7 +3,10 @@ FROM ubuntu:xenial
 MAINTAINER ungleich Team "docker@ungleich.ch"
 
 RUN apt-get update \
-	&& apt-get install --no-install-recommends -y \
+	&& DEBIAN_FRONTEND=noninteractive apt-get install \
+	                  --no-install-recommends -y \
+                      -o Dpkg::Options::="--force-confdef" \
+                      -o Dpkg::Options::="--force-confold" \
 						git \
 						openssl \
 						ca-certificates \
