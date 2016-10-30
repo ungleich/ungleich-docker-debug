@@ -14,5 +14,9 @@ RUN apt-get update \
                         tftp \
                         tshark \
                         man \
+                        nmap \
+                        dsniff \
+                        socat \
+                        netcat \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
