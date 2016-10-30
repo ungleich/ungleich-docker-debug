@@ -18,5 +18,7 @@ RUN apt-get update \
                         dsniff \
                         socat \
                         netcat \
+                        zsh \
+                        dhcping \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
