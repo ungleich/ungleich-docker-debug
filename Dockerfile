@@ -10,5 +10,7 @@ RUN apt-get update \
 						curl \
                         dnsutils \
                         iputils-ping \
+                        iproute \
+                        tftp \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
