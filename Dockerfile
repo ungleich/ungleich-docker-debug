@@ -23,5 +23,6 @@ RUN apt-get update \
                         netcat \
                         zsh \
                         dhcping \
+                        dhclient \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
