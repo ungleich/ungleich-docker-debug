@@ -7,10 +7,10 @@ RUN apt-get update \
 	                  --no-install-recommends -y \
                       -o Dpkg::Options::="--force-confdef" \
                       -o Dpkg::Options::="--force-confold" \
-						git \
-						openssl \
-						ca-certificates \
-						curl \
+                        git \
+                        openssl \
+                        ca-certificates \
+                        curl \
                         dnsutils \
                         iputils-ping \
                         iproute \
@@ -26,5 +26,6 @@ RUN apt-get update \
                         udhcpc \
                         dhcpdump \
                         dhcpcd5 \
+                        python3 \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
