@@ -27,5 +27,6 @@ RUN apt-get update \
                         dhcpdump \
                         dhcpcd5 \
                         python3 \
+                        vim \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
