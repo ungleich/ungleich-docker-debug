@@ -10,6 +10,7 @@ RUN apt-get update \
                         git \
                         openssl \
                         ca-certificates \
+                        openssh-client \
                         curl \
                         dnsutils \
                         iputils-ping \
